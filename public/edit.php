@@ -9,6 +9,8 @@ if (!$quiz_id) {
     redirect('index.php');
 }
 
+$error = null;
+
 // Handle Question Addition
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['save_questions'])) {
     if (isset($_POST['questions']) && is_array($_POST['questions'])) {

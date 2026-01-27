@@ -12,4 +12,3 @@ try {
     // Log error for admin/developer
     error_log("Database Connection Error: " . $e->getMessage());
 }
-?>

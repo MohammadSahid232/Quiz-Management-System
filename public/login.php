@@ -3,6 +3,9 @@ require_once __DIR__ . '/../includes/header.php';
 
 $error = '';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    if (!validate_csrf_token($_POST['csrf_token'] ?? '')) {
+        die("CSRF token validation failed.");
+    }
     $username = sanitize($_POST['username']);
     $password = $_POST['password'];
 
@@ -34,6 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <?php endif; ?>
 
     <form method="POST">
+        <input type="hidden" name="csrf_token" value="<?= generate_csrf_token() ?>">
         <div class="form-group">
             <label>Username</label>
             <input type="text" name="username" class="form-control" required>

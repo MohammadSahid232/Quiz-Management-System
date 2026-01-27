@@ -46,4 +46,26 @@ function getCurrentUserId()
 {
     return $_SESSION['user_id'] ?? null;
 }
+
+/**
+ * Generate and store a CSRF token in the session if it doesn't exist.
+ * @return string
+ */
+function generate_csrf_token()
+{
+    if (empty($_SESSION['csrf_token'])) {
+        $_SESSION['csrf_token'] = bin2hex(random_bytes(32));
+    }
+    return $_SESSION['csrf_token'];
+}
+
+/**
+ * Validate the provided CSRF token against the one stored in the session.
+ * @param string $token
+ * @return bool
+ */
+function validate_csrf_token($token)
+{
+    return isset($_SESSION['csrf_token']) && hash_equals($_SESSION['csrf_token'], $token);
+}
 ?>

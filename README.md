@@ -13,6 +13,7 @@ A simple and user-friendly web-based quiz application where admins can create qu
 ⚡ Instant score results
 
 📱 Responsive design
+--------------------------------------------------------------
 
 🛠️ Built With
 
@@ -26,6 +27,7 @@ A simple and user-friendly web-based quiz application where admins can create qu
 
 ⚙️ JavaScript
 
+--------------------------------------------------------------
 🚀 Setup & Run
 
 📥 Clone the repository
@@ -35,10 +37,12 @@ A simple and user-friendly web-based quiz application where admins can create qu
 ▶️ Start Apache & MySQL
 
 🗃️ Import the database file
+--------------------------------------------------------------
 
 🌍 Open in browser
 
 http://localhost/Quiz-Management-System/
+--------------------------------------------------------------
 
 🔄 How It Works
 

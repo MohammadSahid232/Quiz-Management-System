@@ -1,66 +1,47 @@
-Quiz Management System
+🎯 Quiz Management System
 
-The Quiz Management System is a simple web application that allows users to take online quizzes and admins to manage quiz questions.
-It is designed for learning, practice, and basic online assessments.
+A simple and user-friendly web-based quiz application where admins can create quizzes and users can take them online 📚.
 
-Features
+✨ Features
 
-User login
+👤 User login system
 
-Admin panel
+🧑‍💼 Admin panel for quiz management
 
-Create and manage quizzes
+📝 Multiple-choice questions
 
-Multiple-choice questions
+⚡ Instant score results
 
-Automatic score calculation
+📱 Responsive design
 
-Responsive design
+🛠️ Built With
 
-Technologies Used
+🐘 PHP
 
-HTML
+🗄️ MySQL
 
-CSS
+🌐 HTML
 
-JavaScript
+🎨 CSS
 
-PHP
+⚙️ JavaScript
 
-MySQL
+🚀 Setup & Run
 
-How to Run the Project
+📥 Clone the repository
 
-Clone the repository
+📂 Move project to xampp/htdocs/
 
-git clone https://github.com/MohammadSahid232/Quiz-Management-System.git
+▶️ Start Apache & MySQL
 
+🗃️ Import the database file
 
-Move the project folder to
-
-xampp/htdocs/
-
-
-Start Apache and MySQL using XAMPP
-
-Create a database in phpMyAdmin and import the provided .sql file
-
-Update database credentials in the config file
-
-Open in browser
+🌍 Open in browser
 
 http://localhost/Quiz-Management-System/
 
-How It Works
+🔄 How It Works
 
-Admin creates quizzes and questions
+🧑‍💼 Admin creates quizzes & questions
 
-Users take quizzes and see their scores
-
-Future Improvements
-
-Leaderboard
-
-Quiz reports
-
-More question types
+👨‍🎓 Users attempt quizzes and get results
